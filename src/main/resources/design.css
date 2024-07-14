@@ -1,0 +1,45 @@
+.card{
+
+  -fx-background-color:#020914;
+
+}
+.button{
+
+  -fx-background-color:#3f3983;
+  -fx-text-fill:#fff;
+  -fx-cursor:hand;
+}
+.button:hover{
+
+  -fx-background-color:rgba(140, 0, 143, 0.30);
+
+}
+.key-result{
+
+  -fx-background-color:linear-gradient(to bottom right, rgba(140, 0, 143, 0.30), rgba(0, 130, 133, 0.30));
+  -fx-background-radius:20px;
+  -fx-text-fill:#fff;
+  -fx-font-size:20px;
+  -fx-padding:20px 15px 5px 15px;
+}
+.common-component{
+
+  -fx-font-family: 'Noto Sans JP', sans-serif;
+  -fx-font-size:22px;
+  -fx-font-weight:700;
+  -fx-background-color:#00b4d8;
+  -fx-text-fill:white;
+
+}
+.exit{
+
+  -fx-background-color:#683232;
+  -fx-background-radius:2px;
+  -fx-cursor:hand;
+
+}
+.exit:hover{
+
+  -fx-background-color:rgba(100, 0, 143, 0.30);
+
+}

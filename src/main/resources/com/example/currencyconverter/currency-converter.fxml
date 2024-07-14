@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="563.0" prefWidth="393.0"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.currencyconverter.HelloController">
+   <children>
+      <AnchorPane prefHeight="563.0" prefWidth="393.0" styleClass="card" stylesheets="@../../../design.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="30.0" layoutY="193.0" prefHeight="27.0" prefWidth="59.0" text="AMOUNT" textFill="#fff6f6">
+               <font>
+                  <Font name="ArnoPro-Smbd" size="13.0" />
+               </font></Label>
+            <TextField fx:id="enterAmountField" layoutX="98.0" layoutY="183.0" opacity="0.81" prefHeight="40.0" prefWidth="200.0" promptText="amount" styleClass="common-component" stylesheets="@../../../design.css" />
+            <Label layoutX="38.0" layoutY="270.0" prefHeight="25.0" prefWidth="44.0" text=" FROM" textFill="#fffafa">
+               <font>
+                  <Font name="ArnoPro-Smbd" size="13.0" />
+               </font></Label>
+            <Label layoutX="51.0" layoutY="354.0" prefHeight="25.0" prefWidth="31.0" text="TO" textFill="#f7f7f7fc">
+               <font>
+                  <Font name="ArnoPro-Smbd" size="13.0" />
+               </font></Label>
+            <ComboBox fx:id="currencyOneBox" layoutX="98.0" layoutY="259.0" onAction="#setCurrencyOne" opacity="0.81" prefHeight="40.0" prefWidth="200.0" styleClass="common-component" stylesheets="@../../../design.css">
+            </ComboBox>
+            <ComboBox fx:id="currencyTwoBox" layoutX="97.0" layoutY="344.0" onAction="#setCurrencyTwo" opacity="0.81" prefHeight="40.0" prefWidth="200.0" stylesheets="@../../../design.css">
+             <styleClass>
+                 <String fx:value="common-component" />
+             </styleClass>
+             <value>
+                 <String fx:value="This is Option 4" />
+             </value>
+            </ComboBox>
+            <Button fx:id="convert" layoutX="233.0" layoutY="414.0" mnemonicParsing="false" onAction="#convertCurrency" prefHeight="61.0" prefWidth="134.0" styleClass="common-component" stylesheets="@../../../design.css" text="CONVERT">
+               <font>
+                  <Font name="ArnoPro-ItalicCaption" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="367.0" layoutY="1.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="24.0" styleClass="exit" stylesheets="@../../../design.css" />
+            <Label fx:id="resultLabel" layoutX="22.0" layoutY="448.0" prefHeight="55.0" prefWidth="168.0" styleClass="key-result" stylesheets="@../../../design.css" textFill="#f8f4f4" />
+            <ImageView fitHeight="108.0" fitWidth="123.0" layoutX="19.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../lib/Image/currency(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
